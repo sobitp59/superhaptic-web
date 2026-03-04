@@ -10,7 +10,7 @@ export default function Hero() {
 
   useEffect(() => {
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
-                     ('ontouchstart' in window && window.innerWidth < 768);
+      ('ontouchstart' in window && window.innerWidth < 768);
 
     setDeviceType(isMobile ? 'mobile' : 'desktop');
 
@@ -28,7 +28,7 @@ export default function Hero() {
       <div className="hero-content">
         <h1>Feel the Web Come to Life</h1>
         <p className="hero-subtitle">
-          Bring mobile-like tactile experiences to your web applications with seamless haptic and audio feedback
+          Bring mobile-like tactile experiences to your web applications with seamless haptic feedback
         </p>
 
         <div className="cta-buttons">
